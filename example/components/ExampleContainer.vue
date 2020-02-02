@@ -22,7 +22,7 @@
           <tr v-for="(value, name) in utilOptions" :key="name">
             <td class="nes-text is-primary">{{ name }}</td>
             <td class="nes-text is-success">
-              {{ value ? value.toString() : value }}
+              {{ value ? (value.name ? value.name : value.toString()) : value }}
             </td>
           </tr>
         </tbody>
