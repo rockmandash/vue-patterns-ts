@@ -8,11 +8,6 @@
             Home
           </nuxt-link>
         </li>
-        <li>
-          <nuxt-link to="/readme">
-            Read Me
-          </nuxt-link>
-        </li>
       </ul>
     </div>
 

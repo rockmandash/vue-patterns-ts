@@ -1,3 +1,0 @@
-<template functional>
-  <nuxt />
-</template>
