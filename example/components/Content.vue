@@ -7,7 +7,7 @@
 
 <style lang="scss" scoped>
 .nes-container {
-  margin-top: 10px;
+  margin-top: 12px;
   margin-left: 420px;
   width: calc(100vw - 430px);
 }
