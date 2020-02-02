@@ -12,7 +12,9 @@
     "generate": "yarn run prepare && nuxt generate"
   },
   "dependencies": {
+    "@types/flat": "^0.0.28",
     "@types/lodash": "^4.14.149",
+    "flat": "^5.0.0",
     "highlight.js": "^9.18.1",
     "lodash": "^4.17.15",
     "nuxt": "^2.11.0",
