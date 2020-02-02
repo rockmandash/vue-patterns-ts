@@ -1,0 +1,1 @@
+See: https://vue-patterns-ts.surge.sh/
