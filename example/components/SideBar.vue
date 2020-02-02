@@ -48,4 +48,8 @@ export default Vue.extend({
   height: calc(100vh - 110px);
   overflow: scroll;
 }
+
+.nuxt-link-exact-active {
+  color: #e76e55;
+}
 </style>
