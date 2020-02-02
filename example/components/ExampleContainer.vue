@@ -1,5 +1,7 @@
 <template>
   <div>
+    <h2 class="nes-text is-primary">Examples</h2>
+
     <section
       class="showcase"
       v-for="exampleName in Object.keys(this.examplesData)"
@@ -63,7 +65,7 @@ export default Vue.extend({
 }
 
 h2.nes-text.is-primary {
-  margin-top: 2rem;
+  margin: 2rem 0;
 }
 
 .nes-table-responsive {
