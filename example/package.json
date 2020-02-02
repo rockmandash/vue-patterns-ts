@@ -1,0 +1,30 @@
+{
+  "name": "vue-patterns-ts-nuxt",
+  "version": "1.0.0",
+  "description": "My sublime Nuxt.js project",
+  "author": "Joseph Wang",
+  "private": true,
+  "scripts": {
+    "prepare": "node ./scripts/prepare.js",
+    "dev": "yarn run prepare && nuxt",
+    "build": "yarn run prepare && nuxt build",
+    "start": "yarn run prepare && nuxt start",
+    "generate": "yarn run prepare && nuxt generate"
+  },
+  "dependencies": {
+    "@types/lodash": "^4.14.149",
+    "highlight.js": "^9.18.1",
+    "lodash": "^4.17.15",
+    "nuxt": "^2.11.0",
+    "v-clipboard": "^2.2.2"
+  },
+  "devDependencies": {
+    "@nuxt/typescript-build": "^0.5.6",
+    "@types/highlight.js": "^9.12.3",
+    "fs-extra": "^8.1.0",
+    "glob": "^7.1.6",
+    "node-sass": "^4.13.1",
+    "replaceall": "^0.1.6",
+    "sass-loader": "^8.0.2"
+  }
+}
