@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div
+    <section
       class="showcase"
       v-for="exampleName in Object.keys(this.examplesData)"
       :key="exampleName"
@@ -10,7 +10,7 @@
         :sourceCode="examplesData[exampleName].sourceCode"
         :exampleName="exampleName"
       />
-    </div>
+    </section>
   </div>
 </template>
 
@@ -27,3 +27,13 @@ export default Vue.extend({
   }
 });
 </script>
+
+<style lang="scss" scoped>
+.showcase {
+  margin-top: 2.5rem;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+</style>

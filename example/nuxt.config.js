@@ -25,6 +25,10 @@ export default {
       {
         rel: 'stylesheet',
         href: 'https://unpkg.com/nes.css@2.3.0/css/nes.min.css'
+      },
+      {
+        rel: 'stylesheet',
+        href: '/highlight-theme.css'
       }
     ]
   },
