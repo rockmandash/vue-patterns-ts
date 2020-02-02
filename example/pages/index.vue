@@ -17,6 +17,27 @@
     <highlight-code lang="html">
       npm install vue-patterns-ts
     </highlight-code>
+
+    <h1 class="nes-text is-primary">Highlights</h1>
+
+    <div class="lists">
+      <ol class="nes-list is-disc">
+        <li>Clear Example and usage.</li>
+        <li>Written in TypeScript</li>
+        <li>Package is tree-shakable</li>
+        <li>Debouce, Throttle built-in</li>
+        <li>Nuxt, SSR Compatable</li>
+      </ol>
+    </div>
+
+    <h1 class="nes-text is-primary">Learn More</h1>
+
+    <a
+      class="nes-btn is-primary"
+      target="_blank"
+      href="https://github.com/rockmandash/vue-patterns-ts"
+      >Go To Github Repo</a
+    >
   </div>
 </template>
 
