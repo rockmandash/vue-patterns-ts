@@ -12,7 +12,11 @@
       <button type="button" class="nes-btn copycode" v-clipboard="sourceCode">
         copy
       </button>
-      <pre v-highlightjs="sourceCode"><code class="xml"></code></pre>
+
+      <!-- Code Block -->
+      <highlight-code lang="vue">
+        {{ sourceCode }}
+      </highlight-code>
     </section>
   </Toggle>
 </template>
@@ -36,7 +40,7 @@ export default Vue.extend({
 });
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .showcode {
   position: absolute;
   font-size: 12px;
@@ -46,6 +50,12 @@ export default Vue.extend({
 
 .samplecode {
   position: relative;
+
+  code {
+    font-size: 13px;
+    line-height: 1.5;
+    padding: 1.5rem;
+  }
 }
 
 .copycode {
@@ -53,11 +63,5 @@ export default Vue.extend({
   font-size: 12px;
   top: 0;
   right: 0px;
-}
-
-.code {
-  font-size: 13px;
-  line-height: 1.5;
-  padding: 1.5rem;
 }
 </style>

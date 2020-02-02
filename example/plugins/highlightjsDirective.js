@@ -1,28 +1,21 @@
 import Vue from 'vue';
-import hljs from 'highlight.js';
+import VueHighlightJS from 'vue-highlight.js';
 
-Vue.directive('highlightjs', {
-  deep: true,
-  bind: function(el, binding) {
-    // on first bind, highlight all targets
-    let targets = el.querySelectorAll('code');
-    targets.forEach(target => {
-      // if a value is directly assigned to the directive, use this
-      // instead of the element content.
-      if (binding.value) {
-        target.textContent = binding.value;
-      }
-      hljs.highlightBlock(target);
-    });
-  },
-  componentUpdated: function(el, binding) {
-    // after an update, re-fill the content and then highlight
-    let targets = el.querySelectorAll('code');
-    targets.forEach(target => {
-      if (binding.value) {
-        target.textContent = binding.value;
-        hljs.highlightBlock(target);
-      }
-    });
+// Highlight.js languages (Only required languages)
+import css from 'highlight.js/lib/languages/css';
+import javascript from 'highlight.js/lib/languages/javascript';
+import vue from 'highlight.js/lib/languages/xml';
+import typescript from 'highlight.js/lib/languages/typescript';
+
+/*
+ * Use Vue Highlight.js
+ */
+Vue.use(VueHighlightJS, {
+  // Register only languages that you want
+  languages: {
+    css,
+    javascript,
+    typescript,
+    vue
   }
 });
