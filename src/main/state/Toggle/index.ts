@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import { VNode } from 'vue/types/umd';
-import { renderScopedSlotWithData } from '../../../baseRender';
+import { renderScopedSlotsWithData } from '../../../baseRender';
 
 const ToggleOptions = {
   props: {
@@ -30,7 +30,7 @@ const Toggle = Vue.extend({
     }
   },
   render(h): VNode {
-    return renderScopedSlotWithData.call(this, h, {
+    return renderScopedSlotsWithData.call(this, h, {
       on: this.on,
       setOn: this.setOn,
       setOff: this.setOff,

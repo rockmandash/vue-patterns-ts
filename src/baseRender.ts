@@ -4,7 +4,7 @@ function renderNothing(): VNode {
   return null as any;
 }
 
-function renderScopedSlotOrRenderlessWithData(
+function renderScopedSlotsOrRenderlessWithThisData(
   this: any,
   h: CreateElement
 ): VNode {
@@ -19,7 +19,7 @@ function renderScopedSlotOrRenderlessWithData(
   return h('div', slotNodes);
 }
 
-function renderDefaultSlot(this: any, h: CreateElement): VNode {
+function renderDefaultSlots(this: any, h: CreateElement): VNode {
   const slotNodes = this.$slots.default;
 
   if (!slotNodes) {
@@ -29,7 +29,7 @@ function renderDefaultSlot(this: any, h: CreateElement): VNode {
   return h('div', slotNodes);
 }
 
-function renderScopedSlotWithData(
+function renderScopedSlotsWithData(
   this: any,
   h: CreateElement,
   data: object
@@ -46,8 +46,8 @@ function renderScopedSlotWithData(
 }
 
 export {
-  renderScopedSlotWithData,
-  renderScopedSlotOrRenderlessWithData,
-  renderDefaultSlot,
+  renderScopedSlotsWithData,
+  renderScopedSlotsOrRenderlessWithThisData,
+  renderDefaultSlots,
   renderNothing
 };

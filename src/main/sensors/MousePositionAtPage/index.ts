@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import { updateFunctionName } from '../../../constant';
-import { createRenderScopedSlotOrRenderlessWithWindowEvent } from '../../../render';
+import { createRenderScopedSlotsOrRenderlessWithWindowEvent } from '../../../render';
 import { debounceAndThrottleProps } from '../../../debounceAndThrottle';
 import { emitThisData } from '../../../snippets';
 
@@ -26,7 +26,7 @@ const MousePositionAtPage = Vue.extend({
       emitThisData.call(this, MousePositionAtPageOptions.listenerName);
     }
   },
-  render: createRenderScopedSlotOrRenderlessWithWindowEvent(
+  render: createRenderScopedSlotsOrRenderlessWithWindowEvent(
     MousePositionAtPageOptions.listenerName
   )
 });

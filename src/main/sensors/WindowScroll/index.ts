@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import { isClient } from '../../../utils';
-import { createRenderScopedSlotOrRenderlessWithWindowEvent } from '../../../render';
+import { createRenderScopedSlotsOrRenderlessWithWindowEvent } from '../../../render';
 import { updateFunctionName } from '../../../constant';
 import { debounceAndThrottleProps } from '../../../debounceAndThrottle';
 import { emitThisData } from '../../../snippets';
@@ -27,7 +27,7 @@ const WindowScroll = Vue.extend({
       emitThisData.call(this, WindowScrollOptions.listenerName);
     }
   },
-  render: createRenderScopedSlotOrRenderlessWithWindowEvent(
+  render: createRenderScopedSlotsOrRenderlessWithWindowEvent(
     WindowScrollOptions.listenerName
   )
 });

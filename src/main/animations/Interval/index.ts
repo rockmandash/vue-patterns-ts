@@ -1,5 +1,5 @@
 import Vue from 'vue';
-import { renderScopedSlotOrRenderlessWithData } from '../../../baseRender';
+import { renderScopedSlotsOrRenderlessWithThisData } from '../../../baseRender';
 import { emitThisData } from '../../../snippets';
 
 const IntervalOptions = {
@@ -59,7 +59,7 @@ const Interval = Vue.extend({
       }
     }
   },
-  render: renderScopedSlotOrRenderlessWithData
+  render: renderScopedSlotsOrRenderlessWithThisData
 });
 
 type IntervalEmittedDataType = ReturnType<typeof createInitialData>;

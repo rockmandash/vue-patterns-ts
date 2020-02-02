@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import { isClient } from '../../../utils';
-import { createRenderScopedSlotOrRenderlessWithWindowEvent } from '../../../render';
+import { createRenderScopedSlotsOrRenderlessWithWindowEvent } from '../../../render';
 import { updateFunctionName } from '../../../constant';
 import { debounceAndThrottleProps } from '../../../debounceAndThrottle';
 import { emitThisData } from '../../../snippets';
@@ -37,7 +37,7 @@ const WindowSize = Vue.extend({
       emitThisData.call(this, WindowSizeOptions.listenerName);
     }
   },
-  render: createRenderScopedSlotOrRenderlessWithWindowEvent(
+  render: createRenderScopedSlotsOrRenderlessWithWindowEvent(
     WindowSizeOptions.listenerName
   )
 });

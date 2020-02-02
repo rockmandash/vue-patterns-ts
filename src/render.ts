@@ -3,7 +3,7 @@ import { updateFunctionName } from './constant';
 import { WindowEvent } from './main/browser/WindowEvent';
 import { mapDebounceAndThrottleProps } from './debounceAndThrottle';
 
-function createRenderScopedSlotOrRenderlessWithWindowEvent(
+function createRenderScopedSlotsOrRenderlessWithWindowEvent(
   event: keyof WindowEventMap
 ) {
   return function(this: any, h: CreateElement): VNode {
@@ -30,4 +30,4 @@ function createRenderScopedSlotOrRenderlessWithWindowEvent(
   };
 }
 
-export { createRenderScopedSlotOrRenderlessWithWindowEvent };
+export { createRenderScopedSlotsOrRenderlessWithWindowEvent };
