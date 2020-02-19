@@ -13,7 +13,7 @@
     "lint": "echo 'TODO'",
     "prepare": "tsdx build",
     "release": "np -yolo",
-    "format": "prettier --config ./.prettierrc --write '**/*.{ts,js,css,html,json,vue,mdx}'"
+    "format": "prettier --config ./.prettierrc --write '**/*.{ts,js,css,html,json,vue,md,mdx}'"
   },
   "peerDependencies": {
     "vue": "2.6.x"
