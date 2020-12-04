@@ -15,7 +15,7 @@
     "@types/flat": "^0.0.28",
     "@types/lodash": "^4.14.149",
     "flat": "^5.0.0",
-    "highlight.js": "^9.18.1",
+    "highlight.js": "^10.4.1",
     "lodash": "^4.17.15",
     "nuxt": "^2.11.0",
     "v-clipboard": "^2.2.2",
